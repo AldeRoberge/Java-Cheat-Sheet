@@ -1,6 +1,7 @@
 /** 
 * Java has a tendency to start JFrames in an akward position on the screen
-*  To put a JFrame right dead smack in the middle of the screen, do this in the initiation
+* and sometimes (most of the time) setLocationRelativeTo(null); doesn't work, so I use this 
+* to put a JFrame right dead smack in the middle of the screen. Add this in the initiation :
 */
 
 Dimension dimemsion = Toolkit.getDefaultToolkit().getScreenSize();
