@@ -1,0 +1,5 @@
+JFrame f = (JFrame) getTopLevelAncestor(); //Gets to the top ancestor
+		
+if (f != null) {
+  f.setTitle(Constants.SOFTWARE_NAME + " - " + fileSystemView.getSystemDisplayName(file));
+}
