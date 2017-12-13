@@ -31,6 +31,10 @@ public class ObjectSerializer<T extends Serializable> {
 		return t;
 	}
 
+	public void set(T t) {
+		this.t = t;
+	}
+
 	/**
 	 * @param file
 	 *            path of file to create and save data to
@@ -60,8 +64,7 @@ public class ObjectSerializer<T extends Serializable> {
 
 	}
 
-	public void serialise(T t) {
-		this.t = t;
+	public void serialise() {
 
 		try {
 			FileOutputStream fos = new FileOutputStream(file);
@@ -92,7 +95,7 @@ public class ObjectSerializer<T extends Serializable> {
 		// Add new value
 		ArrayList<String> t = new ArrayList<String>();
 		t.add("Hey!");
-		genericSerialiserTest.serialise(t);
+		genericSerialiserTest.serialise();
 
 		// Show value in file
 		System.out.println(genericSerialiserTest.get());
