@@ -1,4 +1,4 @@
-/** A good base for any JTable */
+/** A good base for any JTable, keep in mind this is an untested piece of code */
 
 
 package comboX;
