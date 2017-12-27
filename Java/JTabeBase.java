@@ -1,7 +1,4 @@
-/** A good base for any JTable, keep in mind this is an untested piece of code */
-
-
-package comboX;
+package i18n;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -107,15 +104,6 @@ public class FileManager extends JPanel implements ActionListener {
 
 						}
 
-						//Update toolbar and menu
-						//tellSelectedFilesChanged(); TODO
-
-						//Save on every selection change, might cause performance issues TODO
-						//(this is done to fix actions not serialising the list after moving and deleting)
-						//filesSerialiser.serialise(fileTableModel.getFiles());
-
-						//filesSerialiser.serialise();
-
 					}
 
 				}
@@ -134,8 +122,6 @@ public class FileManager extends JPanel implements ActionListener {
 
 	/** Update the table on the EDT */
 	private void setTableData(List<File> newFiles) {
-
-		//Update table
 
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
