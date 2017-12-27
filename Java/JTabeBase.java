@@ -52,8 +52,6 @@ public class FileManager extends JPanel implements ActionListener {
 		setLayout(new BorderLayout(3, 3));
 		setBorder(new EmptyBorder(5, 5, 5, 5));
 
-		JPanel detailView = new JPanel(new BorderLayout(3, 3));
-
 		table = new JTable();
 		table.setRowSelectionAllowed(true);
 		table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
@@ -116,7 +114,7 @@ public class FileManager extends JPanel implements ActionListener {
 		JScrollPane tableScroll = new JScrollPane(table);
 		Dimension d = tableScroll.getPreferredSize();
 		tableScroll.setPreferredSize(new Dimension((int) d.getWidth(), (int) d.getHeight() / 2));
-		detailView.add(tableScroll, BorderLayout.CENTER);
+		add(tableScroll, BorderLayout.CENTER);
 
 	}
 
