@@ -1,5 +1,5 @@
 /**
-* If you want to stop a program from hanging, use this trick (breaks synchronisation, the code following this will be running at the same time)
+* If you want to stop a program from hanging, use this trick (breaks linearity, the code following this will be running at the same time)
 */
 
 new Thread("Thread name") {
