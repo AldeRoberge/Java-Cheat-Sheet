@@ -1,0 +1,3 @@
+static DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+
+dateFormat.format(new Date());
