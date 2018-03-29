@@ -133,7 +133,7 @@ public class FileManager extends JPanel implements ActionListener {
 				if (!cellSizesSet) {
 
 					table.setRowHeight(40);
-					setColumnWidth(0, -1);
+					//setColumnWidth(0, -1);
 					cellSizesSet = true;
 
 				}
